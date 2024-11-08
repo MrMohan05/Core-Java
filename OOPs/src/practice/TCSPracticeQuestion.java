@@ -1,8 +1,6 @@
 package practice;
-
 import java.util.*;
 import java.util.Scanner;
-
 public class TCSPracticeQuestion
 {
 	static List<String> arrenges=new ArrayList();
