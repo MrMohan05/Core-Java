@@ -29,27 +29,29 @@ public class TCSPracticeQuestion
 		{
 			arrenges.add(arreng);
 			try {
-				System.out.printf("\nInside %d %d %d %d",g,r,y,z++);
+				System.out.printf("\nInside %d %d %d ",g,r,y);
 			} catch (Exception e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			return;
+			
 		}
+		else {
 		if(g>0 && last!='g')
 		{
 			//System.out.println("Inside g");
-			arrengments(arreng+'g',g-1,r,y,'g');
+			System.out.printf("\nInside %d %d %d ",g,r,y);
+			arrengments(arreng+'g',--g,r,y,'g');
 		}
 		if(r>0 && last!='r')
 		{
-			//System.out.println("Inside r");
-			arrengments(arreng+'r',g,r-1,y,'r');
+//			System.out.println("Inside r");
+			arrengments(arreng+'r',g,--r,y,'r');
 		}
 		if(y>0 && last!='y')
 		{
-			//System.out.println("Inside y");
-			arrengments(arreng+'y',g,r,y-1,'y');
+//			System.out.println("Inside y");
+			arrengments(arreng+'y',g,r,--y,'y');
+		}
 		}
 	}
 }
