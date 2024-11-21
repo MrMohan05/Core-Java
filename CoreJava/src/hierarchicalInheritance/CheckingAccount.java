@@ -1,4 +1,4 @@
-package inheritance;
+package hierarchicalInheritance;
 
 public class CheckingAccount extends BankAccount
 {
