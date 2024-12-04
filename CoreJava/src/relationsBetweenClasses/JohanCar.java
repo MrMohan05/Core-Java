@@ -9,6 +9,11 @@ public class JohanCar
 	 
 	 JohanCar(String brand,String model,int year,Driver driver)
 	 {
+		 if(year<2004)
+		 {
+			System.err.println("The car has compleated 20 years");
+			System.exit(0);
+		 }
 		 this.brand=brand;
 		 this.driver=driver;
 		 this.model=model;

@@ -6,6 +6,11 @@ public class Driver
 	private String name;
 	Driver(int age,String name)
 	{
+		if(age<=18)
+		{
+			System.err.println("Age should be greate than 18");
+			System.exit(0);
+		}
 		this.age=age;
 		this.name=name;
 	}
