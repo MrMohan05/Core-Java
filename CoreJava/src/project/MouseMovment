@@ -1,0 +1,30 @@
+package project;
+
+import javax.swing.*;
+import java.awt.event.*;
+
+public class MouseMovement {
+    public static void main(String[] args) {
+        // Create a frame
+        JFrame frame = new JFrame("Mouse Movement Lambda Example");
+        frame.setSize(400, 300);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        // Create a label to display mouse coordinates
+        JLabel label = new JLabel("Move the mouse over the frame");
+        frame.add(label);
+
+        // Use a lambda expression with MouseMotionAdapter
+        frame.addMouseMotionListener(new MouseMotionAdapter() {
+            @Override
+            public void mouseMoved(MouseEvent e) {
+                label.setText("Mouse moved at: " + e.getX() + ", " + e.getY());
+            }
+        });
+
+        // Make the frame visible
+        frame.setVisible(true);
+    }
+}
+
+
