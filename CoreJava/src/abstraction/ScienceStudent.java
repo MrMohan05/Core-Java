@@ -6,8 +6,9 @@ public class ScienceStudent extends Student
 	private int chemistryMarks;
 	private int mathMarks;
 	
-	ScienceStudent(int physicsMarks,int chemistryMarks,int mathMarks)
+	ScienceStudent(int physicsMarks,int chemistryMarks,int mathMarks,String studentClass,String studentName)
 	{
+		super(studentClass,studentName);
 		if((physicsMarks>100 || physicsMarks<0) || (chemistryMarks>100 || chemistryMarks<0) || (mathMarks>100 || mathMarks<0))
 		{
 			return;
